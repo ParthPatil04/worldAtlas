@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "FaLocationDot",
+    "title": "Find Us",
+    "details": "Birmingham, United Kingdom"
+  },
+  {
+    "icon": "IoCallSharp",
+    "title": "Call Us",
+    "details": "+44 7785924856"
+  },
+  {
+    "icon": "MdEmail",
+    "title": "Mail Us",
+    "details": "parthrpatil.pp@gmail.com"
+  }
+]

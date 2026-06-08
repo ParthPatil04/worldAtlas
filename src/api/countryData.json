@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "countryName": "India",
+    "capital": "New Delhi",
+    "population": "1.43 Billion",
+    "interestingFact": "India is home to the world's largest democracy."
+  },
+  {
+    "id": 2,
+    "countryName": "Japan",
+    "capital": "Tokyo",
+    "population": "125 Million",
+    "interestingFact": "Japan has more than 6,800 islands and is famous for bullet trains."
+  },
+  {
+    "id": 3,
+    "countryName": "Brazil",
+    "capital": "Brasilia",
+    "population": "203 Million",
+    "interestingFact": "Brazil contains around 60% of the Amazon rainforest."
+  },
+  {
+    "id": 4,
+    "countryName": "Canada",
+    "capital": "Ottawa",
+    "population": "40 Million",
+    "interestingFact": "Canada has the longest coastline in the world."
+  },
+  {
+    "id": 5,
+    "countryName": "Australia",
+    "capital": "Canberra",
+    "population": "27 Million",
+    "interestingFact": "Australia is the only country that is also a continent."
+  },
+  {
+    "id": 6,
+    "countryName": "Germany",
+    "capital": "Berlin",
+    "population": "84 Million",
+    "interestingFact": "Germany is known for inventing the modern automobile."
+  },
+  {
+    "id": 7,
+    "countryName": "South Africa",
+    "capital": "Pretoria",
+    "population": "62 Million",
+    "interestingFact": "South Africa has three capital cities."
+  },
+  {
+    "id": 8,
+    "countryName": "Italy",
+    "capital": "Rome",
+    "population": "59 Million",
+    "interestingFact": "Italy is home to the ancient Roman Empire and the Colosseum."
+  },
+  {
+    "id": 9,
+    "countryName": "United States",
+    "capital": "Washington, D.C.",
+    "population": "339 Million",
+    "interestingFact": "The United States has 50 states and the world's largest economy."
+  },
+  {
+    "id": 10,
+    "countryName": "Egypt",
+    "capital": "Cairo",
+    "population": "112 Million",
+    "interestingFact": "Egypt is famous for the pyramids and the Nile River."
+  }
+]
