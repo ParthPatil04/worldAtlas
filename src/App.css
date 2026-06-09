@@ -146,7 +146,7 @@ nav ul {
 
   .menu-mobile {
     position: absolute;
-    top: 10rem;
+    top: 9rem;
     left: 0;
     background-color: #0d1212;
     width: 100%;
@@ -157,6 +157,7 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1.2rem;
 
     & li:first-child {
       margin-top: 1.2rem;
@@ -550,7 +551,7 @@ contact us page
 contact us Page ends here 
 --------------------- */
 
-@media screen and (max-width: 1320px) {
+@media screen and (max-width: 1420px) {
   .grid-four-cols {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -579,6 +580,7 @@ contact us Page ends here
 .loader {
   width: 50px;
   padding: 8px;
+  margin: 10% auto;
   aspect-ratio: 1;
   border-radius: 50%;
   background: #25b09b;
@@ -606,4 +608,12 @@ contact us Page ends here
 /* Extra by Parth */
 .contact-wrapper button:hover {
         color: #2e86c1;
+}
+
+/* button .btn-primary-read-more :hover {
+    color: #2e86c1;
+} */
+
+.countryInfo button:hover {
+    color: #2e86c1;
 }
