@@ -16,7 +16,9 @@ const Country = () => {
       startTransition(async () => {
           const countryData = await getAllCountryData();
           console.log(countryData);
-          setCountries(countryData.data);
+          console.log(countryData.data.meta);
+          setCountries(countryData.data.data.objects);
+          console.log(countryData.data.data.objects[0]);
       })
   }, []);
 
@@ -27,7 +29,7 @@ const Country = () => {
 
    const searchCountry = (country) => {
     if(search){
-     return country.name.common.toLowerCase().includes(search.toLowerCase());
+     return country.names.common.toLowerCase().includes(search.toLowerCase());
     } else {
       return true;
     }
@@ -41,9 +43,13 @@ const Country = () => {
    }
 
   // filtering the countries based on search and filter criteria
-  const filteredCountries = countries.filter((country) => {
-     return searchCountry(country) && filterRegion(country);
-  })
+  const validCountries = countries.filter(
+  (country) => country.flag?.url_svg
+  );
+
+  const filteredCountries = validCountries.filter((country) => {
+  return searchCountry(country) && filterRegion(country);
+  });
 
   return (
     <section className="country-section container">
@@ -53,10 +59,10 @@ const Country = () => {
           {
             filteredCountries.length === 0 ? <p>No Results Found</p> : 
             filteredCountries.map((curCountry, index) => {
-              const { name, population, region, capital, flags } = curCountry;
+              const { names, population, region, capital, flag } = curCountry;
               return (
                 // <CountryCard key={index} country={curCountry} />
-                <CountryCard key={index} name={name} population={population} region={region} capital={capital} flags={flags} />
+                <CountryCard key={index} names={names} population={population} region={region} capital={capital} flag={flag} />
               )
             })
           }

@@ -15,7 +15,7 @@ export const SearchFilter = ({search, setSearch, filter, setFilter, countries, s
       const sortedList = [...countries].sort((a, b) => 
       {
        return (
-        order === "ascending" ? a.name.common.localeCompare(b.name.common) : b.name.common.localeCompare(a.name.common)
+        order === "ascending" ? a.names.common.localeCompare(b.names.common) : b.names.common.localeCompare(a.names.common)
        )
       });
       setCountries(sortedList);
@@ -23,13 +23,13 @@ export const SearchFilter = ({search, setSearch, filter, setFilter, countries, s
     
     return (
         <section className="section-searchFilter">
-            <input type="text" style={{"margin-top": "15px"}} className="select-section" placeholder="search" value={search} onChange={handleInputChange} />
+            <input type="text"  className="select-section" placeholder="search" value={search} onChange={handleInputChange} />
 
             <button onClick={() => sortCountries("ascending")} className="select-section">Ascending</button>
             <button onClick={() => sortCountries("descending")} className="select-section">Descending</button>
 
             <div>
-                <select name="" id="" className="select-section" value={filter} onChange={handleSelectChange} style={{"margin-top": "15px"}}>
+                <select name="" id="" className="select-section" value={filter} onChange={handleSelectChange} >
                     <option value="all">All</option>
                     <option value="africa">Africa</option>
                     <option value="americas">Americas</option>
