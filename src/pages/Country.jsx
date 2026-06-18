@@ -15,8 +15,8 @@ const Country = () => {
   useEffect(() => {
       startTransition(async () => {
           const countryData = await getAllCountryData();
-          console.log(countryData);
-          console.log(countryData.data.meta);
+          // console.log(countryData);
+          // console.log(countryData.data.meta);
           setCountries(countryData.data.data.objects);
           console.log(countryData.data.data.objects[0]);
       })
@@ -59,10 +59,10 @@ const Country = () => {
           {
             filteredCountries.length === 0 ? <p>No Results Found</p> : 
             filteredCountries.map((curCountry, index) => {
-              const { names, population, region, capital, flag } = curCountry;
+              const { names, population, region, capitals, flag } = curCountry;
               return (
                 // <CountryCard key={index} country={curCountry} />
-                <CountryCard key={index} names={names} population={population} region={region} capital={capital} flag={flag} />
+                <CountryCard key={index} names={names} population={population} region={region} capitals={capitals} flag={flag} />
               )
             })
           }

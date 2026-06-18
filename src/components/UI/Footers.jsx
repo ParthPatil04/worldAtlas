@@ -37,8 +37,8 @@ const Footers = () => {
             <div className="copyright-text">
               <p>
                 Copyright &copy; 2024, All Right Reserved
-                <NavLink to="https://thapatechnical.shop/" target="_blank">
-                  ThapaTechnical
+                <NavLink to="https://github.com/ParthPatil04" target="_blank">
+                  MyGitHub
                 </NavLink>
               </p>
             </div>
@@ -51,18 +51,18 @@ const Footers = () => {
 
                 <li>
                   <NavLink
-                    to="https://www.instagram.com/thapatechnical/"
+                    to="https://parths-ecommerce.vercel.app/"
                     target="_blank"
                   >
-                    Social
+                    ECommerce
                   </NavLink>
                 </li>
                 <li>
                   <NavLink
-                    to="https://thapatechnical.shop/source-code"
+                    to="https://portfolio-parthpatil04.vercel.app/"
                     target="_blank"
                   >
-                    Source Code
+                    My Portfolio
                   </NavLink>
                 </li>
                 <li>

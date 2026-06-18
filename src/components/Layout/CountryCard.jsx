@@ -1,15 +1,13 @@
 import "../../App.css";
 import { NavLink } from "react-router-dom";
 
-export const CountryCard = ({ names, population, region, capital, flag }) => {
+export const CountryCard = ({ names, population, region, capitals, flag }) => {
   // export const CountryCard = ({curCountry}) => {
   // const { name, population, region, capital, flags } = curCountry;
   return (
     <li className="country-card card">
       <div className="container-card bg-white-box">
-        {flag.url_svg && (
-      <img src={flag.url_svg} alt={flag.description} />
-      )}
+        {flag.url_svg && <img src={flag.url_svg} alt={flag.description} />}
         <div className="countryInfo">
           {/* <p className="card-title">{name.common.length > 10 ? name.common.slice(0,10) + '...' : name.common}</p> */}
           <p
@@ -29,11 +27,12 @@ export const CountryCard = ({ names, population, region, capital, flag }) => {
           </p>
           <p>
             <span className="card-description">Capital:</span>
-            <span title={capital?.[0]?.length > 10 ? capital[0] : ""}>
-              {capital?.[0]?.length > 10
-                ? `${capital[0].slice(0, 12)}...`
-                : capital?.[0] || "N/A"}
+            <span title={capitals?.[0]?.name}>
+              {capitals?.[0]?.name?.length > 10
+                ? `${capitals[0].name.slice(0, 12)}...`
+                : capitals?.[0]?.name || "N/A"}
             </span>
+            {/* <span>{`${capitals?.[0]?.name}`}</span> */}
           </p>
 
           <NavLink
